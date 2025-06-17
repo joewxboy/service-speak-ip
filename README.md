@@ -25,3 +25,14 @@ Of course, specifying the `INTERFACE_NAME` is inconvenient. You could do somethi
 
 This has currently only been tested on a few Raspberry Pi models.
 
+## Prerequisites
+
+- **Hardware:** Raspberry Pi (or compatible Linux device) with audio output (headphones, speakers, or HDMI audio)
+- **Software:**
+  - Docker (for containerized deployment)
+  - Python 3
+  - `espeak` (speech synthesis)
+  - `netifaces` Python package
+- **Environment Variables:**
+  - `INTERFACE_NAME` (default: `eth0`) — The network interface whose IP address will be spoken. Set to `wlan0` for WiFi, or another interface as needed.
+
