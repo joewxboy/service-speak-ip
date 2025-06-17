@@ -113,3 +113,11 @@ python3 speak-ip.py
 | Troy Fine    | [t-fine](https://github.com/t-fine)         | <troy.fine@ibm.com>      |
 | John Walicki | [johnwalicki](https://github.com/johnwalicki) | <walicki@us.ibm.com>     |
 
+## Resources
+
+- [eSpeak Documentation](http://espeak.sourceforge.net/docindex.html)
+- [Open Horizon Documentation](https://github.com/open-horizon/docs)
+- [Example: service-node-red-hello-world](https://github.com/open-horizon-services/service-node-red-hello-world/blob/main/README.md)
+- [Example: service-fledge](https://github.com/open-horizon-services/service-fledge/blob/main/README.md)
+- [Example: service-homeassistant](https://github.com/open-horizon-services/service-homeassistant/blob/main/README.md)
+
