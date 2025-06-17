@@ -36,3 +36,29 @@ This has currently only been tested on a few Raspberry Pi models.
 - **Environment Variables:**
   - `INTERFACE_NAME` (default: `eth0`) — The network interface whose IP address will be spoken. Set to `wlan0` for WiFi, or another interface as needed.
 
+## Installation
+
+### Docker (Recommended)
+
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/open-horizon-services/service-speak-ip.git
+   cd service-speak-ip
+   ```
+2. Build the Docker image:
+   ```sh
+   docker build -t speak-ip:latest .
+   ```
+
+### Local (Direct Python)
+
+1. Install dependencies:
+   ```sh
+   sudo apt-get update && sudo apt-get install -y python3 python3-pip espeak
+   pip3 install netifaces
+   ```
+2. (Optional) Set the `INTERFACE_NAME` environment variable:
+   ```sh
+   export INTERFACE_NAME=eth0  # or wlan0, etc.
+   ```
+
