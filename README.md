@@ -2,7 +2,9 @@
 
 ![MIT License](https://img.shields.io/github/license/open-horizon-services/service-speak-ip?label=License&color=blue) ![AMD86](https://img.shields.io/badge/x86-yes-green) ![ARM64](https://img.shields.io/badge/arm64-yes-green) ![Contributors](https://img.shields.io/github/contributors/open-horizon-services/service-speak-ip.svg)
 
-> **A simple Open Horizon service that speaks the LAN IP address through the default audio output.**
+## Description
+
+`service-speak-ip` is a lightweight Open Horizon microservice designed to audibly announce the LAN IP address of its host device (such as a Raspberry Pi) every 30 seconds. It uses the `espeak` tool to convert the IP address to speech, making it easy to identify the device's network address without needing a display or SSH access. This service is ideal for IoT and edge computing scenarios where quick, hands-free identification of a device's IP is useful.
 
 It does this over and over forever, every 30 seconds.
 
