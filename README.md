@@ -92,3 +92,17 @@ python3 speak-ip.py
 - The service will announce the IP address every 30 seconds.
 - To change the interface, set the `INTERFACE_NAME` environment variable before running.
 
+## Advanced Details
+
+### Environment Variables
+- `INTERFACE_NAME`: The network interface to monitor (default: `eth0`). Set to `wlan0` for WiFi or another interface as needed.
+
+### Customization
+- The service uses the default English `espeak` voice. You can modify `speak-ip.py` to use a different language or voice supported by `espeak`.
+- By default, the service only looks at the specified interface. For more advanced detection (e.g., auto-detecting the default route), you can enhance the script as described in the comments.
+
+### How It Works
+- The service retrieves the IPv4 address of the specified interface using the `netifaces` Python package.
+- It converts the IP address into a "speakable" string (e.g., `1 9 2 dot 1 6 8 dot 1 dot 1 2 3`).
+- The `espeak` tool is used to audibly announce the IP address every 30 seconds.
+
