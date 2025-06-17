@@ -106,3 +106,10 @@ python3 speak-ip.py
 - It converts the IP address into a "speakable" string (e.g., `1 9 2 dot 1 6 8 dot 1 dot 1 2 3`).
 - The `espeak` tool is used to audibly announce the IP address every 30 seconds.
 
+## Authors
+
+| Name         | GitHub      | Email                |
+|--------------|-------------|----------------------|
+| Troy Fine    | [t-fine](https://github.com/t-fine)         | <troy.fine@ibm.com>      |
+| John Walicki | [johnwalicki](https://github.com/johnwalicki) | <walicki@us.ibm.com>     |
+
