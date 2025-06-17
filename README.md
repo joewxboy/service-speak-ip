@@ -1,8 +1,10 @@
 # service-speak-ip
 
-![Apache](https://img.shields.io/github/license/open-horizon-services/service-speak-ip) ![AMD86](https://img.shields.io/badge/x86-yes-green) ![ARM64](https://img.shields.io/badge/arm64-yes-green) ![Contributors](https://img.shields.io/github/contributors/open-horizon-services/service-speak-ip.svg)
+![MIT License](https://img.shields.io/github/license/open-horizon-services/service-speak-ip?label=License&color=blue) ![AMD86](https://img.shields.io/badge/x86-yes-green) ![ARM64](https://img.shields.io/badge/arm64-yes-green) ![Contributors](https://img.shields.io/github/contributors/open-horizon-services/service-speak-ip.svg)
 
-A simple Open Horizon service that speaks the LAN IP address through the default audio output. It does this over and over forever, every 30 seconds.
+> **A simple Open Horizon service that speaks the LAN IP address through the default audio output.**
+
+It does this over and over forever, every 30 seconds.
 
 Of course, if you wish to hear the speech, you will need to plug in some earphones/headphones or if you have configured your Raspberry Pi to use only the HDMI for audio output, then you will need to connect an HDMI cable to something that can emit audio.
 
