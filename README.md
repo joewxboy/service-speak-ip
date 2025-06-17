@@ -62,3 +62,33 @@ This has currently only been tested on a few Raspberry Pi models.
    export INTERFACE_NAME=eth0  # or wlan0, etc.
    ```
 
+## Usage
+
+### Docker
+
+Run the service in a container (replace `eth0` with your interface if needed):
+
+```sh
+docker run -d \
+  --name speak-ip \
+  --restart unless-stopped \
+  --device /dev/snd \
+  --net=host \
+  -e INTERFACE_NAME=eth0 \
+  speak-ip:latest
+```
+
+### Local (Direct Python)
+
+Run the service directly (ensure dependencies are installed):
+
+```sh
+python3 speak-ip.py
+```
+
+### Testing
+
+- Attach a speaker or headphones to your device.
+- The service will announce the IP address every 30 seconds.
+- To change the interface, set the `INTERFACE_NAME` environment variable before running.
+
